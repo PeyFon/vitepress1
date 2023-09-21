@@ -4,6 +4,8 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "My Awesome Project",
   base: "/vitepress1/",
+  cleanUrls: true,
+  lastUpdated: true,
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
