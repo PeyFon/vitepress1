@@ -5,6 +5,7 @@ export default defineConfig({
   title: "My Awesome Project",
   base: "/vitepress1/",
   cleanUrls: true,
+  lang: "cn-ZH",
   lastUpdated: true,
   description: "A VitePress Site",
   themeConfig: {
