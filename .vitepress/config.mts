@@ -6,7 +6,7 @@ export default defineConfig({
   base: "/vitepress1/",
   cleanUrls: true,
   lang: "cn-ZH",
-
+  lastUpdated: true,
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
