@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "My Awesome Project11"
+  text: "A VitePress Site2"
+  tagline: My great project tagline1
   actions:
     - theme: brand
       text: Markdown Examples
