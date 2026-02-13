@@ -44,7 +44,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Install dependencies
-        run: npm ci # or pnpm install / yarn install
+        run: npm install # or pnpm install / yarn install
 
       - name: Build with VitePress
         run: npm run docs:build # Verify your build script name in package.json
