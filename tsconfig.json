@@ -1,0 +1,57 @@
+{
+  // "extends": "@vue/tsconfig/tsconfig.web.json",
+
+  "compilerOptions": {
+    "module": "esnext",
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "preserveValueImports": false,
+    "useDefineForClassFields": true,
+    "target": "esnext",
+    "strict": true,
+    "moduleResolution": "nodenext",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "sourceMap": true,
+    "strictNullChecks": false,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "allowJs": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "types": [
+      "node",
+      "vite/client",
+      "unplugin-icons/types/vue",
+      "element-plus/global",
+      "unplugin-vue-define-options/macros-global"
+    ],
+    "paths": {
+      "@/*": ["./docs/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost", "WebWorker"]
+  },
+  "include": [
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "docs/**/*.d.ts",
+    "docs/**/*.ts",
+    "docs/**/*.tsx",
+    "docs/**/*.vue",
+    "build/**/*.ts",
+    "plugins/**/*.ts"
+  ],
+  "exclude": ["node_modules", "dist", "**/*.js", "**/*.md"]
+
+  // "references": [
+  //   {
+  //     "path": "./tsconfig.demo.json"
+  //   }
+  // ]
+}

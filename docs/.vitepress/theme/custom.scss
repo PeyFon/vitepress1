@@ -1,0 +1,193 @@
+::-webkit-scrollbar {
+  //滚动条整体样式
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  //滚动条里面小方块
+  border-radius: 6px;
+  box-shadow: none;
+  cursor: pointer;
+  background: rgba(144, 147, 153, 0.3);
+}
+
+::-webkit-scrollbar-track {
+  //滚动条里面轨道
+  box-shadow: none;
+  border-radius: 6px;
+  // background: rgba(127, 171, 255, 0.1);
+}
+.panel {
+  background: var(--el-bg-color);
+}
+:root {
+  --vp-c-brand: #165dff;
+  --vp-c-brand-lighter: #3491fb;
+  --vp-c-brand-light: var(--vp-c-brand-lighter);
+  --vp-button-brand-border: var(--vp-c-brand-lighter);
+  --vp-button-brand-hover-bg: #306fff;
+  --vp-button-brand-hover-border: var(--vp-c-brand-lighter);
+  --vp-button-brand-active-border: var(--vp-c-brand-lighter);
+  --vp-button-brand-active-bg: var(--vp-c-brand);
+  --vp-c-brand-dark: var(--vp-c-brand-lighter);
+  /* 标题 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(
+    92.06deg,
+    #33c2ff -17.9%,
+    #257cff 43.39%,
+    #165dff 99.4%
+  );
+
+  /* 图标背景 */
+  --vp-home-hero-image-background-image: linear-gradient(
+    92.06deg,
+    #33c2ff -17.9%,
+    #257cff 43.39%,
+    #165dff 99.4%
+  );
+  --vp-home-hero-image-filter: blur(150px);
+}
+
+/* 表格的样式覆盖 */
+
+.vp-doc[class^="el"] table th,
+.vp-doc[class^="el"] table td {
+  min-width: 130px;
+}
+
+:not([class^="el"]) table {
+  border: 1px solid #e5e6ec;
+}
+
+.vp-doc table {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.dark table {
+  border-color: #484849;
+}
+
+.vp-doc thead tr {
+  border-top: none;
+}
+
+.vp-doc thead th {
+  color: rgb(29, 33, 41);
+  background-color: #f2f3f5;
+}
+
+.dark .vp-doc table {
+  border-color: #484849;
+}
+.dark .vp-doc thead th {
+  color: #f6f6f6;
+  background-color: #2e2e30;
+}
+
+table:not([class^="el"]) tbody td:first-child {
+  width: 150px;
+}
+
+table:not([class^="el"]) tbody td:nth-child(2) {
+  min-width: 150px;
+}
+
+table:not([class^="el"]) tbody td:nth-child(3) {
+  width: 70%;
+}
+table:not([class^="el"]) tbody td:nth-child(4) {
+  min-width: 100px;
+}
+
+table:not([class^="el"]) tbody td:last-child {
+  min-width: 100px;
+}
+
+table:not([class^="el"]) tbody td:nth-child(3),
+table:not([class^="el"]) tbody td:nth-child(4),
+table:not([class^="el"]) tbody td:nth-child(3) code,
+table:not([class^="el"]) tbody td:nth-child(4) code {
+  color: #3c7eff;
+  background-color: transparent;
+}
+
+table:not([class^="el"]) tbody tr:hover {
+  background-color: #f7f8fa;
+}
+
+.dark table:not([class^="el"]) tbody tr:hover {
+  background-color: #202023;
+}
+
+table:not([class^="el"]) tr:nth-child(2n) {
+  background-color: transparent;
+}
+
+table:not([class^="el"]) td,
+table:not([class^="el"]) th {
+  border: none;
+}
+
+.el-table__header,
+.el-table__body {
+  margin: 0 !important;
+  border: none !important;
+}
+
+/* 侧边栏的样式覆盖 */
+.VPSidebarItem a p {
+  transform: translateX(10px);
+}
+
+.VPSidebarItem .item:not([role="button"]) a:hover {
+  background-color: #d7d7e9;
+  border-radius: 5px;
+}
+
+.dark .VPSidebarItem .item:not([role="button"]) a:hover {
+  background-color: #313136;
+}
+
+/* 目录大纲的样式覆盖 */
+.VPDocAsideOutline nav {
+  transform: translateX(1em);
+}
+
+.VPDocAsideOutline nav a.outline-link.active {
+  color: var(--vp-c-brand);
+}
+
+.VPDocAsideOutline nav .outline-link:hover {
+  color: rgb(15, 15, 16, 0.92);
+}
+
+.VPDocAsideOutline nav ul {
+  -webkit-padding-start: 0px;
+  padding-inline-start: 0px;
+  list-style: none;
+  margin-top: 0;
+}
+
+.VPDocAsideOutline .outline-marker {
+  width: 4px;
+  border-radius: 0 4px 4px 0;
+}
+
+/* 页脚的样式覆盖 */
+.VPFooter .message a:hover {
+  color: #257cff;
+}
+
+.i-icon {
+  display: flex;
+}
+.token.entity,
+.token.operator,
+.token.url,
+.token.variable {
+  background: rgb(255 255 255 / 0%) !important;
+}
